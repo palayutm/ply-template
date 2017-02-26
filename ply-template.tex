@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fancyhdr}  % 页眉页脚
+\usepackage{minted}    % 代码高亮
+\usepackage[colorlinks]{hyperref}  % 目录可跳转
+\setlength{\headheight}{15pt}
+
+% 定义页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Algorithm Library by palayutm}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\author{palayutm}   
+\title{Algorithm Library}
+
+\begin{document} 
+\maketitle % 封面
+\newpage % 换页
+\tableofcontents % 目录
+\newpage
+\section{Graph Theory} % 一级标题
+\subsection{Minimum Spanning Tree} % 二级标题
+\subsubsection{Kruskal} % 三级标题
+\inputminted[breaklines]{c++}{graph/kruskal.cc} % 插入代码文件
+\subsection{Shortest Path}
+\subsubsection{SPFA}
+\inputminted[breaklines]{c++}{graph/spfa.cc}
+
+\twocolumn  % 分页显示
+\newpage
+\section{String}
+\subsection{KMP}
+\inputminted[breaklines]{c++}{string/kmp.cc}
+
+\subsection{Suffix Automaton}
+\inputminted[breaklines]{c++}{string/suffix-automaton.cc}
+
+%\newpage
+%\section{Others}
+
+\end{document}
