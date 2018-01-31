@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{article}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 \usepackage{fancyhdr}  % 页眉页脚
 \usepackage{minted}    % 代码高亮
 \usepackage[colorlinks]{hyperref}  % 目录可跳转
@@ -24,7 +25,8 @@
 \subsection{Minimum Spanning Tree} % 二级标题
 \subsubsection{Kruskal} % 三级标题
 \inputminted[breaklines]{c++}{graph/kruskal.cc} % 插入代码文件
-\subsection{Shortest Path}
+% 中文测试
+\subsection{单源最短路}
 \subsubsection{SPFA}
 \inputminted[breaklines]{c++}{graph/spfa.cc}
 

@@ -1,3 +1,4 @@
+/* 中文注释测试 */
 /* 
  * Args:
  *   g[]: graph, (u, v, w) = (u, g[u][i].first, g[u][i].second) 
